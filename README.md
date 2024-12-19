@@ -1,0 +1,3 @@
+# Groovy NullPointerException from Implicit Type Conversion
+
+This example demonstrates a potential pitfall in Groovy due to its dynamic typing.  The `myMethod` function doesn't explicitly handle a `null` parameter and returns 0.  While this might seem harmless, subsequent code relying on the return value could throw a `NullPointerException` if it expects a different type or behavior when a null is passed.  The solution shows how to explicitly check for `null` and return a value more suitable for the rest of the program's logic.
